@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h2>Удаление поста</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  <br>
+  <div class="dialog-page">
+  <p>Вы уверены, что хотите удалить пост "{{post.title}}"?</p>
+  <br>
+    <button class="btn btn-default" type="submit">Удалить</button>
+    <button class="btn btn-default" formaction="{% url 'post_list' %}">Отмена</button>
+  </div>
+</form>
+
+{% endblock content %}

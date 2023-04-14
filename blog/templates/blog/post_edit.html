@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>Редактирование поста</h1>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" name="publish_btn" class="save btn btn-default">Опубликовать</button>
+        <button type="submit" name="draft_save_btn" class="save btn btn-default">Сохранить</button>
+    </form>
+{% endblock %}

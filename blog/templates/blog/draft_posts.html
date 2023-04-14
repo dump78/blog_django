@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+{% for post in posts %}
+{% if not post.published_date %}
+    <div class="post">
+        <div class="date">
+            <p>Сохранено: {{ post.saved_date }}</p>
+        </div>
+        <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endif %}
+{% endfor %}
+{% endblock %}

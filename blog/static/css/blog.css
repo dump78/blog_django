@@ -1,0 +1,69 @@
+.page-header {
+    background-color: #c1dff9;
+    padding: 20px 20px 20px 40px;
+    margin-top: 0;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #828282;
+    font-size: 42pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.content {
+    margin-left: 550px;
+    text-align: justify;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #828282;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #86a3bd;
+}
+
+.glyphicon {
+    float: right;
+}
+
+.btn {
+    float: right;
+    margin-left: 10px;
+}
+
+.dialog-page {
+    text-align: center;
+}
+
+.dialog-form {
+    margin-left: 150px;
+    margin-top: 30px;
+}

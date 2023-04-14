@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+    <form method="post" class="dialog-form" action="{% url 'login' %}">
+    {% csrf_token %}
+        <table>
+        <tr>
+            <td>{{ form.username.label_tag }}</td>
+            <td>{{ form.username }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.password.label_tag }}</td>
+            <td>{{ form.password }}</td>
+        </tr>
+        </table>
+
+        <input type="submit" class="dialog-form" value="Войти" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+
+    {% if form.errors %}
+        <p class="dialog-form">Неверный логин и/или пароль</p>
+    {% endif %}
+
+{% endblock %}
